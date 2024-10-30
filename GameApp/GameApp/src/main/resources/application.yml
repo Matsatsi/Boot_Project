@@ -1,0 +1,16 @@
+server:
+  port: 8082
+some:
+  config: Some configuration data
+spring:
+  application:
+    name: GameApp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Germina01%
+    url: jdbc:mysql://localhost:3306/dcbapp
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
