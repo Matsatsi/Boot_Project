@@ -57,4 +57,9 @@ public class  EmployeeController {
     public Employee fetchEmployeeByName(@PathVariable("name") String name){
         return  employeeService.fetchEmployeeByName(name);
     }
+
+    @GetMapping("/employees/temperature/{temperature}")
+    public List<Employee> fetchByTemperatureLessThan(@PathVariable("temperature") int temperature){
+        return employeeService.fetchByTemperatureLessThan(temperature);
+    }
 }

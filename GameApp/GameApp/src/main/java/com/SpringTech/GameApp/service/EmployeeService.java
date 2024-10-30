@@ -17,4 +17,6 @@ public interface EmployeeService {
     public Employee updateEmployee(long id, Employee employee);
 
     public Employee fetchEmployeeByName(String name);
+
+    List<Employee> fetchByTemperatureLessThan(int temperature);
 }

@@ -59,5 +59,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeRepository.findByNameIgnoreCase(name);
     }
 
+    @Override
+    public List<Employee> fetchByTemperatureLessThan(int temperature) {
+        return employeeRepository.findAllByTemperatureLessThan(temperature);
+    }
+
 
 }
